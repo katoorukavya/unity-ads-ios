@@ -6,6 +6,24 @@ Welcome to the Unity Ads iOS release repository.
 
 Always use the pre-built release framework when integrating Unity Ads into your project. Integration using the source-code is not supported.
 
+## Building
+### Download Ruby
+Ruby can be installed using rbenv or homebrew.
+To install Ruby by rbenv:
+-`brew install rbenv`
+-`rbenv install 2.3.1`
+Setup Ruby by rbenv:
+-`eval "$(rbenv init -)"`
+-`rbenv shell 2.3.1`
+OR
+To install Ruby by brew using terminal:
+-`brew install ruby`
+### Install dependencies:
+-`bundle install`
+### Generate .xcodeproj
+From the terminal, go to the project directory and use:
+-`./generate-project.rb -c dev`
+
 ## Binaries
 
 Binaries can be found from the [releases tab](https://github.com/Unity-Technologies/unity-ads-ios/releases).
